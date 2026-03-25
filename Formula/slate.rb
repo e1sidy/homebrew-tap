@@ -5,21 +5,21 @@
 class Slate < Formula
   desc "Lightweight task management CLI backed by SQLite"
   homepage "https://github.com/e1sidy/slate"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/e1sidy/slate/releases/download/v0.2.0/slate_0.2.0_darwin_amd64.tar.gz"
-      sha256 "9fd9d06f2628915ea4d5fb4b622f8033d4c0434809da6f6c1c791f33910fbed4"
+      url "https://github.com/e1sidy/slate/releases/download/v0.3.0/slate_0.3.0_darwin_amd64.tar.gz"
+      sha256 "d11a155b3cb56150e9b8a44b57b7952db74dad68bfa195339f8292e78224c91c"
 
       define_method(:install) do
         bin.install "slate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/e1sidy/slate/releases/download/v0.2.0/slate_0.2.0_darwin_arm64.tar.gz"
-      sha256 "8ae7c6de32fe3ac901187da7260bac42a740f70105802e0b2f9c512f8caed7b5"
+      url "https://github.com/e1sidy/slate/releases/download/v0.3.0/slate_0.3.0_darwin_arm64.tar.gz"
+      sha256 "2bc6f97824cee148a865af394a27f2d7cf8471d0ddb89765d049405c584a60cc"
 
       define_method(:install) do
         bin.install "slate"
@@ -29,15 +29,15 @@ class Slate < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/e1sidy/slate/releases/download/v0.2.0/slate_0.2.0_linux_amd64.tar.gz"
-      sha256 "2d098367b60b8b26b45b6cd3782e745f45ec0b92ba6b7dd7d4172d450a9dff00"
+      url "https://github.com/e1sidy/slate/releases/download/v0.3.0/slate_0.3.0_linux_amd64.tar.gz"
+      sha256 "2efa00137794f1add41bba19f466e63058db5a42c415930cdfbd42234042c327"
       define_method(:install) do
         bin.install "slate"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/e1sidy/slate/releases/download/v0.2.0/slate_0.2.0_linux_arm64.tar.gz"
-      sha256 "8aa207cb14ab114c876d6e96570b3daa79e1bc97ecb4a3d7d00e3a9c5e60c2bb"
+      url "https://github.com/e1sidy/slate/releases/download/v0.3.0/slate_0.3.0_linux_arm64.tar.gz"
+      sha256 "1547eb690347c8bf0fa99a4e537e7a1727d2b73837a4a8b65c5d72b7deb03a69"
       define_method(:install) do
         bin.install "slate"
       end
