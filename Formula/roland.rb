@@ -5,23 +5,23 @@
 class Roland < Formula
   desc "AI agent workspace orchestrator"
   homepage "https://github.com/e1sidy/roland"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   depends_on "e1sidy/tap/slate"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/e1sidy/roland/releases/download/v0.3.0/roland_0.3.0_darwin_amd64.tar.gz"
-      sha256 "53fa388adb8f32bb17d1a5b4042f948b9b1fd14060e5c4fdc7362569added438"
+      url "https://github.com/e1sidy/roland/releases/download/v0.3.1/roland_0.3.1_darwin_amd64.tar.gz"
+      sha256 "02144732870a3f2db4f3cb0341bf8f87b728fb21663bb86890b6eb66a577413e"
 
       define_method(:install) do
         bin.install "roland"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/e1sidy/roland/releases/download/v0.3.0/roland_0.3.0_darwin_arm64.tar.gz"
-      sha256 "90db454d6ef929517c4817adf7083e33461edebd9b0b200876a7017ed1e69cd0"
+      url "https://github.com/e1sidy/roland/releases/download/v0.3.1/roland_0.3.1_darwin_arm64.tar.gz"
+      sha256 "5f9d27db745d28ac9b50e413f89a16693b2ef5593f33a4f5974d6f8a6cd98e87"
 
       define_method(:install) do
         bin.install "roland"
@@ -31,15 +31,15 @@ class Roland < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/e1sidy/roland/releases/download/v0.3.0/roland_0.3.0_linux_amd64.tar.gz"
-      sha256 "13a1bc8b5807cd16a7d30258758504d7e79fa40c0643c65f113984d07681a45d"
+      url "https://github.com/e1sidy/roland/releases/download/v0.3.1/roland_0.3.1_linux_amd64.tar.gz"
+      sha256 "31c96d573e00c757a71eef47aa1457c6a0fd6f7a57267fe51093169a23146c7d"
       define_method(:install) do
         bin.install "roland"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/e1sidy/roland/releases/download/v0.3.0/roland_0.3.0_linux_arm64.tar.gz"
-      sha256 "49c6275ed6bb8a904344c0f29a356866061e7d52920d4379d7f65247b2400bc0"
+      url "https://github.com/e1sidy/roland/releases/download/v0.3.1/roland_0.3.1_linux_arm64.tar.gz"
+      sha256 "2e6b3466c268b9cdc8ae69ffe96973d7ab02d97486383b3bb023df201940e27f"
       define_method(:install) do
         bin.install "roland"
       end
